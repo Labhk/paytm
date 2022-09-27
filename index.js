@@ -120,7 +120,6 @@ app.post("/callback", (req, res) => {
            console.log(">>>>>".response)
            var _results = JSON.parse(response);
            var sat = _results.STATUS;
-           _results.TXNDATE;
 
            /* where it will come back after payment*/
            res.redirect(`http://localhost:3000/viewBooking?status=${sat.split('_')[1]}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE.slice(0,10)}&bank=${_results.BANKNAME.split('%')[0]}`)
