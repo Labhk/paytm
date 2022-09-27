@@ -42,7 +42,7 @@ if(!paymentDetails.amount || !paymentDetails.customerId || !paymentDetails.custo
     params['CUST_ID'] = paymentDetails.customerId;
     params['TXN_AMOUNT'] = paymentDetails.amount;
     /* where is app is hosted (heroku url)*/
-    params['CALLBACK_URL'] = 'http://localhost:4100/callback';
+    params['CALLBACK_URL'] = 'https://zom-jwt.herokuap.com/callback';
     params['EMAIL'] = paymentDetails.customerEmail;
     params['MOBILE_NO'] = paymentDetails.customerPhone;
   
